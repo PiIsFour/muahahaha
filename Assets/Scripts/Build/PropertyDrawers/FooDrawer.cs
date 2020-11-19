@@ -10,8 +10,8 @@ public class FooDrawer : PropertyDrawer
 	private static
 	(bool, bool) State(in SerializedProperty a, in SerializedProperty b)
 	{
-		if (a.objectReferenceValue as Object) return (true, false);
-		if (b.objectReferenceValue as Object) return (false, true);
+		if (a.objectReferenceValue is Object) return (true, false);
+		if (b.objectReferenceValue is Object) return (false, true);
 		return (true, true);
 	}
 
